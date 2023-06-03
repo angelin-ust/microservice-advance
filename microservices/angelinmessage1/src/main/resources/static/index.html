@@ -1,0 +1,29 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Two-Way Communication App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Two-Way Communication App</h1>
+    <input type="text" id="messageInput" placeholder="Enter your message">
+    <button id="sendButton">Send</button>
+    <div id="messageContainer"></div>
+
+    <script>
+        const socket = new WebSocket("ws://localhost:8080/socket");
+
+        socket.onmessage = function (event) {
+            const message = event.data;
+            $("#messageContainer").append("<p>" + message + "</p>");
+        };
+
+        $("#sendButton").click(function () {
+            const message = $("#messageInput").val();
+            socket.send(message);
+            $("#messageInput").val("");
+        });
+    </script>
+</body>
+</html>

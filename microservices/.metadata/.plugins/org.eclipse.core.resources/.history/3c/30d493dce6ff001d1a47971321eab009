@@ -1,0 +1,12 @@
+server.port=8093
+spring.application.name=testprofile
+spring.application.detail=test profile
+
+Spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+Spring.datasource.url=jdbc:mysql://localhost:3306/sakila
+Spring.datasource.username=root
+Spring.datasource.password=pass@word1
+
+application:name=This is a demo for spring test
+Spring.jpa.show-sql=true
+Spring.jpa.hibernate.ddl-auto=update

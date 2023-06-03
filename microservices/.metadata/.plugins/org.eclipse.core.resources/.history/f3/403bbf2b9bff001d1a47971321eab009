@@ -1,0 +1,30 @@
+server.port=8091
+app.server.name=general
+app.server.details=general profile
+spring.profiles.active=dev
+
+
+
+#Spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+#Spring.datasource.url=jdbc:mysql://localhost:3306/sakila
+#Spring.datasource.username=root
+#Spring.datasource.password=pass@word1
+#
+#Spring.jpa.show-sql=true
+#Spring.jpa.hibernate.ddl-auto=update
+##Spring.jpa.hibernate.ddl-auto=craete if its create it will all datain the table will be gone
+
+
+#create 3 application properties
+#application-dev
+#application-prod
+#application-test
+
+
+#application.properties is a parent file bhakii
+##all iss child so 3 file will inherit all the
+#the properties
+
+#application-dev->h2
+#application-test->mysql
+#application-prod->mongodb

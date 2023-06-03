@@ -1,0 +1,18 @@
+spring:
+ application:
+   name: HelloClient
+server:
+     port: 8092
+    # behind the gateway we no need to registry
+    #this is the 1st step
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    #service must needed to registery service so registry euraka
+#    fetch-registry: true
+#    #we want to service from registry therefore fetch true
+#    #all service need to registed then they have to fetch
+#    service-url:
+#         defaultZone: http://localhost:8761/eureka
+#  instance: 
+#    hostname: localhost 

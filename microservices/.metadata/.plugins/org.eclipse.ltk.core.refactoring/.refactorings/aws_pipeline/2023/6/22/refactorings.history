@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;aws_pipeline/buildinscept.yaml&apos; to &apos;buildspec.yaml&apos;" description="Rename resource &apos;buildinscept.yaml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="buildinscept.yaml" name="buildspec.yaml" stamp="1685728516133" updateReferences="true"/>
+</session>

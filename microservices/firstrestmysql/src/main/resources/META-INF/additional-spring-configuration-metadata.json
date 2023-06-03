@@ -1,0 +1,52 @@
+{"properties": [
+  {
+    "name": "ser",
+    "type": "java.lang.String",
+    "description": "A description for 'ser'"
+  },
+  {
+    "name": "Spring.datasource.username",
+    "type": "java.lang.String",
+    "description": "A description for 'Spring.datasource.username'"
+  },
+  {
+    "name": "Spring.datasource.url",
+    "type": "java.lang.String",
+    "description": "A description for 'Spring.datasource.url'"
+  },
+  {
+    "name": "Spring.jpa.hibernate.ddl-auto",
+    "type": "java.lang.String",
+    "description": "A description for 'Spring.jpa.hibernate.ddl-auto'"
+  },
+  {
+    "name": "Spring.datasource.password",
+    "type": "java.lang.String",
+    "description": "A description for 'Spring.datasource.password'"
+  },
+  {
+    "name": "servert",
+    "type": "java.lang.String",
+    "description": "A description for 'servert'"
+  },
+  {
+    "name": "Spring.datasource.driver-class-name",
+    "type": "java.lang.String",
+    "description": "A description for 'Spring.datasource.driver-class-name'"
+  },
+  {
+    "name": "Spring.jpa.show-sql",
+    "type": "java.lang.String",
+    "description": "A description for 'Spring.jpa.show-sql'"
+  },
+  {
+    "name": "app.server.details",
+    "type": "java.lang.String",
+    "description": "A description for 'app.server.details'"
+  },
+  {
+    "name": "app.server.name",
+    "type": "java.lang.String",
+    "description": "A description for 'app.server.name'"
+  }
+]}

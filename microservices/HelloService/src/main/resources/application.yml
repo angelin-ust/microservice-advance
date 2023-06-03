@@ -1,0 +1,21 @@
+
+spring:
+ application:
+   name: HelloService
+server:
+#     port: 8094 1st we need to nned this
+#after the thegateway we are puting port as 0
+      #port:0
+      #for loggingg
+      port: 8094
+eureka:
+  client:
+    register-with-eureka: true
+    #service must needed to registery service so registry euraka
+    fetch-registry: true
+    #we want to service from registry therefore fetch true
+    #all service need to registed then they have to fetch
+    service-url:
+         defaultZone: http://localhost:8761/eureka
+  instance: 
+    hostname: localhost   
