@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.ust.rest.resource.Product;
 import com.ust.rest.services.ProductService;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/product/api.2.0")
 public class ProductResource {
@@ -45,7 +47,7 @@ public class ProductResource {
 	}
 	
 	
-	
+	@CrossOrigin
 	@GetMapping
 	@RequestMapping("/retrieve/all")
 	public List<Product> fetchProduct()
@@ -99,17 +101,17 @@ public class ProductResource {
 	//ath json ayiiikondumm
 	
 	@PutMapping
-	@RequestMapping(value="/update",
+	@RequestMapping(value="/update/{id}",
 	consumes=MediaType.APPLICATION_JSON_VALUE,
 	produces=MediaType.APPLICATION_JSON_VALUE)
 	
-	public Product updateProduct(@RequestBody Product product)
+	public Product updateProduct(@PathVariable long id,@RequestBody Product product)
 	{
 		return service.updateProduct(product);
 	}
 	
-	
-//	@DeleteMapping
+	//````````````````````````````````@CrossOrigin(origins= {"localhost:4200"},method= {DELETE,)
+    @DeleteMapping
 	@RequestMapping(value="delete/{productId}")
 	public void delete(@PathVariable long productId)
 	{

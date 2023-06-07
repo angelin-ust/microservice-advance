@@ -6,6 +6,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\ust mod3\mvc\firstrestmysql"/>
 			<item value="D:\advanced\microservices\firstrestmysql"/>
 		</list>
 		<list key="projectNameTemplate">

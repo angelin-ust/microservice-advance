@@ -1,0 +1,21 @@
+<p>retrieve works!</p>
+<div>
+    <h2>Products List api.2.0</h2>
+    <table border="2">
+        <thead>
+            <th>Product id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </thead>
+        <tr *ngFor="let Produc of products">
+            <td>{{Produc.productId}}</td>
+            <td>{{Produc.name}}</td>
+            <td>{{Produc.description}}</td>
+            <td>{{Produc.price}}</td>
+            <td>{{Produc.qty}}</td>
+            
+        </tr>
+    </table>
+</div>

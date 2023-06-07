@@ -76,7 +76,14 @@ public class ProductService {
 //	
 	//update
 	public Product updateProduct(Product product) {
-		return productRepository.save(product);
+		Optional<Product> optional=productRepository.findById(product.getProductId());
+Product tempProduct=optional.get();
+tempProduct.setName(product.getName());
+tempProduct.setPrice(product.getPrice());
+tempProduct.setQty(product.getQty());
+tempProduct.setDescription(product.getDescription());
+
+		return productRepository.save(tempProduct);
 	}
 //	
 	//delete
